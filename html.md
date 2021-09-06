@@ -74,14 +74,46 @@ p    {color: red;}
 
 `<div>` element is a block-level and is often used as a container for other HTML elements.
 
+```html
 .note {
   font-size: 120%;              The class attribute is often used to point to a class name in a style sheet.
   color: red;                   The HTML class attribute specifies one or more class names for an element
 }
 `<div class="note">`
+ ``` 
 
+`<h1 id="myHeader">My Header</h1>`  The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
 
+`<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>` An inline frame is used to embed another document within the current HTML document.
 
+```html
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";           This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":
+</script>
+ ``` 
+ 
+ ```html
+<meta charset="UTF-8">                                                   The <meta> element is typically used to specify the character set,
+<meta name="description" content="Free Web tutorials">                   page description, keywords, author of the document, and viewport settings.
+<meta name="keywords" content="HTML, CSS, JavaScript">       
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    The viewport is the user's visible area of a web page.
+                                                                          It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+ ``` 
+
+ ```html
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+ ``` 
+ 
+ ```html
+A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+ ``` 
 
 
 
