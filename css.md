@@ -79,4 +79,36 @@ LINKS
    a:active {color: #FF00CC}
 </style>
 ```
-
+```html
+-Border-collapse controls whether the edge of the other table is adjacent. Possible values: collapse, separate.
+-The border-spacing specifies the width that should appear between table cells.
+-The border-spacing property specifies the distance that separates adjacent cells'. borders. It can take either one or two values; these should be units of length.
+-The caption-side property allows you to specify where the content of a <caption> element should be placed in relationship to the table.
+-The empty-cells property indicates whether a cell without any content should have a border displayed.  Possible values: show, hide or inherit.
+-The table-layout property is supposed to help you control how a browser should render or lay out a table.
+```
+```html
+-The border-style specifies whether a border should be solid, dashed line, double line, or one of the other possible values.
+-The border-width specifies the width of a border.
+-Border-bottom-style changes the style of bottom border.
+-The border-width property allows you to set the width of an element borders. Ex: border-bottom-width changes the width of bottom border.
+-The border property allows you to specify color, style, and width of lines in one property. Ex: border:4px solid red;
+```
+```html
+-The margin property defines the space around an HTML element. 
+-The margin-bottom specifies the bottom margin of an element.
+-The margin property allows you set all of the properties for the four margins in one declaration. Ex: margin: 10px 2% -10px; border:1px solid black;
+```
+```html
+-The list-style-type allows you to control the shape or appearance of the marker. Ex: list-style-type:circle;
+-The list-style-position specifies whether a long point that wraps to a second line should align with the first line or start underneath the start of the marker. Ex:list-style-position:inside;
+-The list-style serves as shorthand for the preceding properties. Ex: list-style: inside square;
+```
+```html
+-The padding property allows you to specify how much space should appear between the content of an element and its border.
+-The padding-top specifies the top padding of an element.
+-The padding serves as shorthand for the preceding properties. Ex: padding:10px 2%;
+```
+```html
+`Overflow` which tells the browser what to do if the box's contents is larger than the box itself. Ex: overflow:scroll; 
+```
