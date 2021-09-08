@@ -63,4 +63,34 @@ for (aProperty in navigator) {
 -onmouseover = "over()"          event triggers when you bring your mouse over any element.
 -onmouseout = "out()"            triggers when you move your mouse out from that element.
 ```
+```html
+Page Redirection
+
+<script type = "text/javascript">
+         <!--
+            function Redirect() {
+               window.location = "https://www.tutorialspoint.com";                         The implementations of Page-Redirection
+            }            
+            document.write("You will be redirected to main page in 10 sec.");              
+            setTimeout('Redirect()', 10000);                                               This would need a bit time delay to load a new page.
+         //-->
+      </script>
+```
+```html
+The JavaScript print function window.print() prints the current web page when executed.
+
+<head>      
+      <script type = "text/javascript">
+         <!--
+         //-->
+      </script>
+   </head> 
+   <body>      
+      <form>
+         <input type = "button" value = "Print" onclick = "window.print()" />
+      </form>   
+   </body>
+
+```
+
 
