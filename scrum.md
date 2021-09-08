@@ -1,0 +1,7 @@
+- product backlog
+- sprint backlog
+- in progress
+- testing
+- documentation
+- blocked
+- pushed 
