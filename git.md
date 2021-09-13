@@ -20,5 +20,5 @@ git pull               synchronize his local repository with the remote one
 
 git stash               takes your modified tracked files, stages changes, and saves them on a stack of unfinished changes that you can reapply at any time.
 
-
+git rm string_operations       remove this file from the repository
 
