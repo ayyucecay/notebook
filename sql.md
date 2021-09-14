@@ -33,6 +33,10 @@ WHERE Country NOT IN ('Germany', 'France', 'UK');
 SELECT CustomerName AS Customer, ContactName AS [Contact Person]      Creates two aliases, one for the CustomerName column and one for the ContactName column.
 FROM Customers;
 
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate          "CustomerID" column in the "Orders" table refers to the "CustomerID" in the "Customers" table.
+FROM Orders                                                               The relationship between the two tables above is the "CustomerID" column.
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
 ```
 
 
