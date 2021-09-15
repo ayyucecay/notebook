@@ -37,6 +37,13 @@ SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate          "Custom
 FROM Orders                                                               The relationship between the two tables above is the "CustomerID" column.
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 
+SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders
+LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID                          Lists the number of orders sent by each shipper
+GROUP BY ShipperName;
+
+SELECT * INTO CustomersBackup2017 IN 'Backup.mdb'                          IN clause to copy the table into a new table in another database
+FROM Customers;  
+
 ```
 
 
