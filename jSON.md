@@ -45,9 +45,28 @@ const obj = {name: "John", age: 30, city: "New York"};
 const myJSON = JSON.stringify(obj);
 ```
 
+## JSON Object 
 
+__Accessing Object Values__
+```html
+const myJSON = '{"name":"John", "age":30, "car":null}';
+const myObj = JSON.parse(myJSON);
+x = myObj.name;
+or
+x = myObj["name"];
+```
 
-
+__JSON From a Server__
+You can request JSON from the server by using an AJAX request
+```html
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+};
+xmlhttp.open("GET", "json_demo.txt");
+xmlhttp.send();
+```
 
 
 
