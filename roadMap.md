@@ -33,7 +33,6 @@
 ### Frontend Projects
 
 - [ ] Dribble landing page clone
-- [ ] Dribble landing page clone 2
 - [X] Calculator with JS
 - [X] Tic Tac Toe Game with JS
 - [ ] Weather Appplication with an API
