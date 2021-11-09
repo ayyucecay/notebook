@@ -144,11 +144,31 @@ if (authenticated) {                          =                          authent
   renderLogin();
 }
 ```
+###React Render HTML
+- React render to HTML using a function called ReactDOM.react()
 
+### React JSX
 
+- JSX allows to write HTML elements in javascript
+ ```html
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+const myelement = <h1>I Love JSX!</h1>;
+ReactDOM.render(myelement, document.getElementById('root'));
+```
+- JSX use attribute className instead of class
 
+### React Components
 
+__Props__
+- Props are send component attributes.
+ ```html
+function Car(props) {
+  return <h2>I am a {props.color} Car!</h2>;
+}
+ReactDOM.render(<Car color="red"/>, document.getElementById('root'));
+```
 
 
 
