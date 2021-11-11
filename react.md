@@ -169,6 +169,30 @@ function Car(props) {
 }
 ReactDOM.render(<Car color="red"/>, document.getElementById('root'));
 ```
+__Components in Files__
+- One new file put the code inside it example
+ ```html
+function Car() {
+  return <h2>I am a Car!</h2>;
+}
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Car from './Car.js';
+
+ReactDOM.render(<Car />, document.getElementById('root'));
+```
+__State Object__
+
+- If you want to use component then use state object and reach any of component "this.state.propertyname"
+
+__Changing state Object__
+- If changing state object any properties then use this.setState() method.
+ ```html
+changeColor = () => {
+    this.setState({color: "blue"});
+  }
+```
 
 
 
