@@ -193,13 +193,28 @@ changeColor = () => {
     this.setState({color: "blue"});
   }
 ```
+__Mounting__
+- This means putting elements into the DOM
+- Has four funciton for this:
+    - constructor()  -----> this method use component
+    - getDerivedStateFromProps() ------> it takes state as an argument and returns an changes object
+    - render() -----> this one use required
+    - componentDidMount() -------> this one use after the component is rendered
+__Updating__ 
+- This means if change in the components state or props then use this
+- Has five built methods:
+    - getDerivedStateFromProps() -----> it is first method after component update
+    - shouldComponentUpdate() ------> it return a boolean value for react continue render or not
+    - render() -----> this one use required
+    - getSnapshotBeforeUpdate() ------>  it access to the props and state before the update
+    - componentDidUpdate() -------> it use after the component is updated in DOM
+    
+__Unmounting__
+- If next phase start then component removed from the DOM
+- Has one method:
+    - componentWillUnmount() -----> removed component removed from the DOM
 
-
-
-
-
-
-
+### React Props
 
 
    
