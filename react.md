@@ -215,12 +215,74 @@ __Unmounting__
     - componentWillUnmount() -----> removed component removed from the DOM
 
 ### React Props
+- Props are passed components in HTML.
+- This qualifications are not change if change their value then get an error.
+
+### React Events
+- React has same events as HTML: click, change, mouseover etc.
+ ```html 
+React                                                                   HTML
+<button onClick={shoot}>Take the Shot!</button>                         <button onclick="shoot()">Take the Shot!</button>
+```   
+### React Conditional Rendering
+ ```html 
+function Goal(props) {
+  const isGoal = props.isGoal;
+  if (isGoal) {
+    return <MadeGoal/>;
+  }
+  return <MissedGoal/>;
+}
+
+ReactDOM.render(
+  <Goal isGoal={false} />,
+  document.getElementById('root')
+);
+``` 
+- Other use is &&:
+ ```html 
+function Garage(props) {
+  const cars = props.cars;
+  return (
+    <>
+      <h1>Garage</h1>
+      {cars.length > 0 &&         ----------------->this senteces mean if cars length over 0 then write the sentences, if not then not write
+        <h2>
+          You have {cars.length} cars in your garage.
+        </h2>
+      }
+    </>
+  );
+}
+
+const cars = ['Ford', 'BMW', 'Audi']; -----> this is the car array and length equal to three
+ReactDOM.render(
+  <Garage cars={cars} />,
+  document.getElementById('root')
+);
+``` 
+- Another use ternary operator.
+ ```html 
+function Goal(props) {
+  const isGoal = props.isGoal;
+  return (
+    <>
+      { isGoal ? <MadeGoal/> : <MissedGoal/> }  --------> if isGoal statment true, then go to MadeGoal function
+    </>
+  );
+}
+
+ReactDOM.render(
+  <Goal isGoal={false} />,
+  document.getElementById('root')
+);
+``` 
+### React Lists
+- React use list for map() method. 
+- All elements in the list have their own unique keys. If one element delete in list just item will be rendered instead of entire list.
 
 
-   
-
-
-
+### React Forms
 
 
 
