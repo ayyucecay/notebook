@@ -283,9 +283,27 @@ ReactDOM.render(
 
 
 ### React Forms
+- onChange() used to control changes in event handler.
+- useState() used to control all input data in page and to ensure one real source. 
+ ```html 
+function MyForm() {
+  const [name, setName] = useState("");
 
+  return (
+    <form>
+      <label>Enter your name:
+        <input
+          type="text" 
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+    </form>
+  )
+}
+``` 
 
-
+### React Router
 
 
 
